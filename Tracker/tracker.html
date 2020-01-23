@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script defer src="busMarker.js"></script>
+    <script defer src="lineString.js"></script>
+    <script defer src="exc3.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/build/ol.js"></script>
+    <link rel="stylesheet" type="text/css" href="exc3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/css/ol.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+
+</head>
+<body>
+
+<form id="select_bus" class="dropdown">
+    <label> Select a bus:
+        <select id="routes">
+        </select>
+    </label>
+</form>
+
+
+<div class="row">
+    <div class="col-12">
+
+        <div class="map" id="map">
+
+            <div class="busButton" id="busButton">
+                <button >Show buses</button>
+            </div>
+
+            <div class="refreshButton" id="refreshButton">
+                <button >Refresh</button>
+            </div>
+
+            <div class="routeButton" id="routeButton">
+                <button >Show route</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
